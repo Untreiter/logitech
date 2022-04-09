@@ -99,26 +99,7 @@
     
 
 
-    <script>
-        let menuCompany = document.querySelectorAll(".company");
-        for (let i = 0; i < menuCompany.length; i++) {
-            const element = menuCompany[i];
-            element.addEventListener('mouseover',function(e){
-                console.log("dsdsds");
-                let img=element.querySelector('img');
-                let oldSRC=img.getAttribute('src');
-                oldSRC=oldSRC.replace('bottom','overlay');
-                img.setAttribute('src',oldSRC);
-            });
-            element.addEventListener('mouseout',function(e){
-                console.log("dsdsds");
-                let img=element.querySelector('img');
-                let oldSRC=img.getAttribute('src');
-                oldSRC=oldSRC.replace('overlay','bottom');
-                img.setAttribute('src',oldSRC);
-            });
-        }
-    </script>
+    
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
