@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech: беспроводные мыши, клавиатуры, гарнитуры и системы для проведения видеоконференций</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="head-block">
+            <div class="company"><a href="#"><img src="img/company/logitechg-bottom.svg" alt=""></a></div>
+            <div class="company"><a href="#"><img src="img/company/astro-bottom.svg" alt=""></a></div>
+            <div class="company"><a href="#"><img src="img/company/blue-bottom.svg" alt=""></a></div>
+            <div class="company"><a href="#"><img src="img/company/streamlabs-bottom.svg" alt=""></a></div>
+            <div class="company"><a href="#"><img src="img/company/jaybird-bottom.svg" alt=""></a></div>
+        </div>
+        <div class="head-block">
+            <a href="#"> RU </a>
+            <span>|</span>
+            <a href="#"><ion-icon name="person-outline"></ion-icon> МОЯ УЧЕТНАЯ ЗАПИСЬ</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <nav>
+            <img src="img/logitechg-bottom.svg" alt="logo" id="logo">
+            <div id="navigation">
+                <div class="nav-btn">ПРОДУКТЫ
+                    <div class="hov">
+                        <ul>
+                            <li>МЫШИ И КЛАВИАТУРЫ</li>
+                            <li>Мыши</li>
+                            <li>
+                                Комплекты «клавиатура + мышь»
+                            </li>
+                            <li>
+                                Клавиатуры
+                            </li>
+                            <li>                                
+                                Принадлежности для рабочего места        
+                            </li>
+                            <li>
+                                Клавиатуры для iPad
+                            </li>
+                            <li>
+                                Клавиатуры для планшетов
+                            </li>
+                        </ul>
+                        <ul>
+                            <li> <img src="img/company/logitechg-overlay.svg"> </li>
+                            <li>
+                                Игровые мыши
+                            </li>
+                            <li>
+                                Коврики для игровых мышей
+                            </li>
+                            <li>
+                                Игровые клавиатуры
+                            </li>
+                            <li>
+                                Аудиоустройства для игр
+                            </li>
+                            <li>
+                                Устройство для потоковой передачи
+                            </li>
+                            <li>
+                                Вождение
+                            </li>
+                            <li>
+                                Космические полеты
+                            </li>
+                            <li>
+                                Авиасимуляторы
+                            </li>
+                            <li>
+                                Геймпады
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-btn">РЕШЕНИЯ
+
+                </div>
+                <div class="nav-btn">ДЛЯ БИЗНЕСА
+
+                </div>
+                <div class="nav-btn">ПОДДЕРЖКА
+
+                </div>
+            </div>
+            <div id="search">
+                <input type="search" placeholder="ПОИСК" name="" id="">
+            </div>
+        </nav>
+
+    </section>
+    
+
+
+    <script>
+        let menuCompany = document.querySelectorAll(".company");
+        for (let i = 0; i < menuCompany.length; i++) {
+            const element = menuCompany[i];
+            element.addEventListener('mouseover',function(e){
+                console.log("dsdsds");
+                let img=element.querySelector('img');
+                let oldSRC=img.getAttribute('src');
+                oldSRC=oldSRC.replace('bottom','overlay');
+                img.setAttribute('src',oldSRC);
+            });
+            element.addEventListener('mouseout',function(e){
+                console.log("dsdsds");
+                let img=element.querySelector('img');
+                let oldSRC=img.getAttribute('src');
+                oldSRC=oldSRC.replace('overlay','bottom');
+                img.setAttribute('src',oldSRC);
+            });
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
